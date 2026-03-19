@@ -25,18 +25,6 @@ I've temporarily **suspended** development on the `main` branch. During the last
 
 ---
 
-### 🏗️ Build & Install
-```bash
-# Prepare the build environment
-make clean
-
-# Compile the module (requires kernel headers)
-make -j$(nproc)
-
-# Load the module (ONLY IN A VM!)
-sudo insmod ghost_mod.ko
-```
-
 ### 🔍 Research Logs
 - `[DONE]` Syscall table hooking via `cr0` register manipulation.
 - `[DONE]` Basic file hiding logic (skipping entries in `getdents64`).
